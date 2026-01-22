@@ -1,5 +1,3 @@
-# brgsttr-de
-
 # brgsttr.de
 
 This repository contains the content and assets published via GitHub Pages for brgsttr.de.
