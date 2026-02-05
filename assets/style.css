@@ -134,3 +134,24 @@ hr {
   border-top: 1px solid var(--line);
   margin: 22px 0;
 }
+.claim {
+  margin: 2px 0 12px 0;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+
+.footer-line {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.footer-sep {
+  opacity: 0.6;
+}
+
+.footer-claim {
+  opacity: 0.9;
+  letter-spacing: 0.02em;
+}
