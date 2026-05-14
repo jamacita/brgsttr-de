@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,25 +10,28 @@
 <body>
   <div class="wrap">
     <header>
-      <div class="brand">BRGSTTR</div>
+      <a class="brand" href="/" aria-label="BRGSTTR home">BRGSTTR</a>
       <nav aria-label="Primary">
         <a href="/">Home</a>
-        <a href="/contact.html">Contact</a>
-        <a href="/privacy.html">Privacy</a>
+        <a href="/about.html">About</a>
+        <a href="/discretion.html">Discretion</a>
         <a href="/notes.html">Notes</a>
+        <a href="/access.html">Access</a>
+        <a href="/contact.html">Contact</a>
       </nav>
     </header>
 
     <main>
       <h1>Not found</h1>
-      <p class="muted">The requested page does not exist.</p>
+      <p class="muted">The requested page does not exist or is not publicly listed.</p>
       <div class="btnrow">
         <a class="btn" href="/">Back to home</a>
+        <a class="btn secondary" href="/contact.html">Contact</a>
       </div>
     </main>
 
     <footer>
-      <div>© BRGSTTR (brgsttr.de)</div>
+      <div class="footer-line"><span>© BRGSTTR (brgsttr.de)</span><span class="footer-sep">·</span><a href="/privacy.html">Privacy</a><span class="footer-sep">·</span><a href="/contact.html">Contact</a></div>
     </footer>
   </div>
 </body>
