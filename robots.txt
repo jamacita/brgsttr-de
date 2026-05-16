@@ -1,4 +1,6 @@
 User-agent: *
+Disallow: /radar/
+Disallow: /radar/index.html
 Allow: /
 
 Sitemap: https://www.brgsttr.de/sitemap.xml
