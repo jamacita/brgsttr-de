@@ -1,0 +1,27 @@
+name: Validate radar
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate-radar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Validate radar data
+        run: node tools/validate-radar.js
+
+      - name: Check generated radar HTML
+        run: node tools/build-radar.js --check
