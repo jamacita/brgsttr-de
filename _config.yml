@@ -1,0 +1,5 @@
+exclude:
+  - _internal
+  - tools
+  - .github
+  - radar/README.md
