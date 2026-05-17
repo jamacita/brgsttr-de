@@ -9,6 +9,7 @@
  * - invalid taxonomy values
  * - wrong A-Z letter assignment
  * - non-alphabetical ordering inside the data source
+ * - invalid optional governance fields
  *
  * Usage:
  *   node tools/validate-radar.js
@@ -18,16 +19,19 @@ const fs = require("fs");
 const path = require("path");
 
 const root = path.resolve(__dirname, "..");
-const file = path.join(root, "assets", "radar.json");
+const file = path.join(root, "_internal", "radar.json");
 
 const data = JSON.parse(fs.readFileSync(file, "utf8"));
 const errors = [];
 
 const allowedKinds = new Set(Object.keys(data.taxonomy || {}));
+const allowedStatuses = new Set(["active", "legacy", "watch", "review"]);
+const allowedSensitivities = new Set(["low", "medium", "high"]);
+const allowedSourceTypes = new Set(["observation-context", "feedback", "submission", "product-use", "concept"]);
 const entries = Array.isArray(data.entries) ? data.entries : [];
 
 if (!entries.length) {
-  errors.push("No entries found in assets/radar.json.");
+  errors.push("No entries found in _internal/radar.json.");
 }
 
 const seen = new Map();
@@ -38,6 +42,12 @@ function expectedLetter(name) {
 
 function sortKey(entry) {
   return `${entry.letter || ""}\u0000${String(entry.name || "").toLocaleLowerCase("de-DE").replace("°", "")}`;
+}
+
+function validateOptionalEnum(entry, index, field, allowed) {
+  if (entry[field] !== undefined && !allowed.has(entry[field])) {
+    errors.push(`entry[${index}]: invalid ${field} "${entry[field]}".`);
+  }
 }
 
 entries.forEach((entry, index) => {
@@ -63,6 +73,14 @@ entries.forEach((entry, index) => {
 
   if (entry.name && entry.letter && expectedLetter(entry.name) !== entry.letter) {
     errors.push(`${ref}: letter "${entry.letter}" does not match name "${entry.name}".`);
+  }
+
+  validateOptionalEnum(entry, index, "status", allowedStatuses);
+  validateOptionalEnum(entry, index, "sensitivity", allowedSensitivities);
+  validateOptionalEnum(entry, index, "sourceType", allowedSourceTypes);
+
+  if (entry.lastReviewed !== undefined && !/^\d{4}-\d{2}-\d{2}$/.test(entry.lastReviewed)) {
+    errors.push(`${ref}: lastReviewed must use YYYY-MM-DD.`);
   }
 
   const normalizedName = String(entry.name || "").trim().toLocaleLowerCase("de-DE");
