@@ -3,23 +3,30 @@
 /**
  * BRGSTTR radar validation
  *
- * Checks the internal radar data source for:
- * - duplicate names
- * - missing required fields
- * - invalid taxonomy values
- * - wrong A-Z letter assignment
- * - non-alphabetical ordering inside the data source
- * - invalid optional governance fields
+ * Validates a private radar source file. The public website repository must not
+ * contain the radar JSON source.
  *
  * Usage:
- *   node tools/validate-radar.js
+ *   RADAR_SOURCE=/absolute/path/to/private/radar.json node tools/validate-radar.js
  */
 
 const fs = require("fs");
 const path = require("path");
 
 const root = path.resolve(__dirname, "..");
-const file = path.join(root, "_internal", "radar.json");
+const candidateSources = [
+  process.env.RADAR_SOURCE,
+  path.resolve(root, "..", "jamacita-method-private", "brgsttr", "radar", "radar.json"),
+  path.resolve(root, "..", "brgsttr-radar-private", "radar.json")
+].filter(Boolean);
+
+const file = candidateSources.find((candidate) => fs.existsSync(candidate));
+
+if (!file) {
+  console.error("Radar validation failed: private radar source not found.");
+  console.error("Set RADAR_SOURCE=/absolute/path/to/private/radar.json.");
+  process.exit(1);
+}
 
 const data = JSON.parse(fs.readFileSync(file, "utf8"));
 const errors = [];
@@ -31,7 +38,7 @@ const allowedSourceTypes = new Set(["observation-context", "feedback", "submissi
 const entries = Array.isArray(data.entries) ? data.entries : [];
 
 if (!entries.length) {
-  errors.push("No entries found in _internal/radar.json.");
+  errors.push("No entries found in private radar source.");
 }
 
 const seen = new Map();
@@ -104,4 +111,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`Radar validation passed: ${entries.length} entries checked.`);
+console.log(`Radar validation passed: ${entries.length} entries checked from ${file}.`);
