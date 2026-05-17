@@ -3,21 +3,34 @@
 /**
  * BRGSTTR radar builder
  *
- * Builds the visible A-Z radar HTML block from the non-published internal source:
- *   _internal/radar.json
+ * Builds the visible A-Z radar HTML block from a private radar source file.
+ * The public website repository must not contain the radar JSON source.
  *
  * Usage:
- *   node tools/build-radar.js
- *   node tools/build-radar.js --check
+ *   RADAR_SOURCE=/path/to/private/radar.json node tools/build-radar.js
+ *   RADAR_SOURCE=/path/to/private/radar.json node tools/build-radar.js --check
  */
 
 const fs = require("fs");
 const path = require("path");
 
 const root = path.resolve(__dirname, "..");
-const sourceFile = path.join(root, "_internal", "radar.json");
 const htmlFile = path.join(root, "radar", "index.html");
 const checkOnly = process.argv.includes("--check");
+
+const candidateSources = [
+  process.env.RADAR_SOURCE,
+  path.resolve(root, "..", "jamacita-method-private", "brgsttr", "radar", "radar.json"),
+  path.resolve(root, "..", "brgsttr-radar-private", "radar.json")
+].filter(Boolean);
+
+const sourceFile = candidateSources.find((candidate) => fs.existsSync(candidate));
+
+if (!sourceFile) {
+  console.error("Radar build failed: private radar source not found.");
+  console.error("Set RADAR_SOURCE=/absolute/path/to/private/radar.json.");
+  process.exit(1);
+}
 
 const data = JSON.parse(fs.readFileSync(sourceFile, "utf8"));
 const html = fs.readFileSync(htmlFile, "utf8");
@@ -76,7 +89,7 @@ const nextHtml = html.replace(pattern, replacement);
 
 if (checkOnly) {
   if (nextHtml !== html) {
-    console.error("Radar build check failed: radar/index.html is not synchronized with _internal/radar.json.");
+    console.error("Radar build check failed: radar/index.html is not synchronized with the private radar source.");
     process.exit(1);
   }
   console.log("Radar build check passed: radar/index.html is synchronized.");
@@ -84,4 +97,4 @@ if (checkOnly) {
 }
 
 fs.writeFileSync(htmlFile, nextHtml, "utf8");
-console.log("Radar HTML block rebuilt from _internal/radar.json.");
+console.log(`Radar HTML block rebuilt from ${sourceFile}.`);
