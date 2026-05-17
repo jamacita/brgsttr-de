@@ -8,19 +8,20 @@ It is not a client list, partnership statement, endorsement claim, public attrib
 
 ## 2. Source of record
 
-The structured maintenance source is:
+The structured maintenance source is private and must not be committed to the public website repository.
 
 ```text
-/assets/radar.json
+Private repository: jamacita/jamacita-method-private
+Private path: brgsttr/radar/radar.json
 ```
 
-The public HTML page remains static and deliberately simple:
+The public website repository contains only the rendered static HTML page:
 
 ```text
 /radar/index.html
 ```
 
-The HTML list should be kept synchronized with the JSON source.
+The public HTML list should be regenerated from the private JSON source when the private source changes.
 
 ## 3. Visible display policy
 
@@ -35,7 +36,7 @@ The public page should remain:
 
 ## 4. Internal taxonomy
 
-The internal `kind` field uses exactly these values:
+The private `kind` field uses exactly these values:
 
 1. `entity`
 2. `format`
@@ -46,21 +47,16 @@ The internal `kind` field uses exactly these values:
 
 Optional `context` values may be used for maintenance clarity where the primary category alone is not sufficient.
 
-## 5. Validation
+## 5. Validation and build
 
-Run:
+Use the private source explicitly:
 
 ```bash
-node tools/validate-radar.js
+RADAR_SOURCE=/absolute/path/to/private/radar.json node tools/validate-radar.js
+RADAR_SOURCE=/absolute/path/to/private/radar.json node tools/build-radar.js
 ```
 
-The validation checks:
-
-1. Duplicate names.
-2. Missing fields.
-3. Invalid taxonomy values.
-4. Letter assignment.
-5. Alphabetical ordering.
+The public repository workflow checks publication hygiene only. It verifies that no radar JSON source exists in the public website repository and that the rendered HTML keeps the required protection and interpretation markers.
 
 ## 6. Revision principle
 
