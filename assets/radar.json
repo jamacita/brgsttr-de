@@ -1,0 +1,848 @@
+{
+  "document": "radar",
+  "site": "brgsttr.de/radar",
+  "currentState": "2026-05-17",
+  "status": "selectively maintained, non-exhaustive and subject to quiet revision",
+  "displayPolicy": {
+    "visibleGrouping": "alphabetical",
+    "visibleSectorLabels": false,
+    "visibleRankings": false,
+    "visibleEntryClaims": false,
+    "publicInterpretation": "orientation, not publication"
+  },
+  "taxonomy": {
+    "entity": "Organisation, brand, company or comparable named entity.",
+    "format": "Programme, publication, event, media format or comparable editorial/format layer.",
+    "platform-app": "App, platform, digital interface, software layer or service interface.",
+    "public-body": "Public institution, administration, ministry or comparable public-sector body.",
+    "place-location": "Place, venue, location or site-specific reference.",
+    "infrastructure-service-system": "Transport, logistics, mobility, infrastructure or operational service system."
+  },
+  "entries": [
+    {
+      "name": "AIDA",
+      "letter": "A",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Alexa",
+      "letter": "A",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "AliBUS",
+      "letter": "A",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "Amazon",
+      "letter": "A",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Anker",
+      "letter": "A",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Apple",
+      "letter": "A",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Apple Maps",
+      "letter": "A",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "ARD",
+      "letter": "A",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "ARD Mediathek",
+      "letter": "A",
+      "kind": "platform-app",
+      "visible": true,
+      "context": "media-library"
+    },
+    {
+      "name": "Auswärtiges Amt",
+      "letter": "A",
+      "kind": "public-body",
+      "visible": true
+    },
+    {
+      "name": "Bauhaus",
+      "letter": "B",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Berlin Brandenburg Airport (BER)",
+      "letter": "B",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "Berlin direkt",
+      "letter": "B",
+      "kind": "format",
+      "visible": true
+    },
+    {
+      "name": "Berliner Ordnungsamt",
+      "letter": "B",
+      "kind": "public-body",
+      "visible": true
+    },
+    {
+      "name": "Blink",
+      "letter": "B",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "Booking.com",
+      "letter": "B",
+      "kind": "platform-app",
+      "visible": true,
+      "context": "travel-booking"
+    },
+    {
+      "name": "BSR (Berliner Stadtreinigung)",
+      "letter": "B",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "Bumble",
+      "letter": "B",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "Bundesagentur für Arbeit",
+      "letter": "B",
+      "kind": "public-body",
+      "visible": true
+    },
+    {
+      "name": "Bundesfinanzministerium",
+      "letter": "B",
+      "kind": "public-body",
+      "visible": true
+    },
+    {
+      "name": "Bundesinnenministerium",
+      "letter": "B",
+      "kind": "public-body",
+      "visible": true
+    },
+    {
+      "name": "Bundeskanzleramt",
+      "letter": "B",
+      "kind": "public-body",
+      "visible": true
+    },
+    {
+      "name": "Burger King",
+      "letter": "B",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "BVG",
+      "letter": "B",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "BVG Muva",
+      "letter": "B",
+      "kind": "infrastructure-service-system",
+      "visible": true,
+      "context": "mobility-on-demand"
+    },
+    {
+      "name": "ChatGPT",
+      "letter": "C",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "Check24",
+      "letter": "C",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "Clever Fit",
+      "letter": "C",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Cloudflare",
+      "letter": "C",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "DB Fernverkehr",
+      "letter": "D",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "DB Navigator",
+      "letter": "D",
+      "kind": "platform-app",
+      "visible": true,
+      "context": "mobility-app"
+    },
+    {
+      "name": "DB Sicherheit",
+      "letter": "D",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "DB Station & Service",
+      "letter": "D",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "Deutsche Rentenversicherung",
+      "letter": "D",
+      "kind": "public-body",
+      "visible": true
+    },
+    {
+      "name": "DHL",
+      "letter": "D",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "Die Finals",
+      "letter": "D",
+      "kind": "format",
+      "visible": true
+    },
+    {
+      "name": "Discover Airlines",
+      "letter": "D",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Docker",
+      "letter": "D",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "Doctolib",
+      "letter": "D",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "DPD",
+      "letter": "D",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "Durstexpress",
+      "letter": "D",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "easyapotheke",
+      "letter": "E",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "easyJet",
+      "letter": "E",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Eis Gianni",
+      "letter": "E",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Entwicklungsministerium",
+      "letter": "E",
+      "kind": "public-body",
+      "visible": true
+    },
+    {
+      "name": "Europäisches Parlament",
+      "letter": "E",
+      "kind": "public-body",
+      "visible": true
+    },
+    {
+      "name": "Explora Journeys",
+      "letter": "E",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Facebook",
+      "letter": "F",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "Finanzguru",
+      "letter": "F",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "flaschenpost",
+      "letter": "F",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "Flughafen Frankfurt/Main",
+      "letter": "F",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "Fraport",
+      "letter": "F",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "FREENOW",
+      "letter": "F",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "Frontal",
+      "letter": "F",
+      "kind": "format",
+      "visible": true
+    },
+    {
+      "name": "Getir",
+      "letter": "G",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "Giovanni Zarrella Show",
+      "letter": "G",
+      "kind": "format",
+      "visible": true
+    },
+    {
+      "name": "GitHub",
+      "letter": "G",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "Google",
+      "letter": "G",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Google Maps",
+      "letter": "G",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "Gorillas",
+      "letter": "G",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Gorillas App",
+      "letter": "G",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "Hermes",
+      "letter": "H",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "heute journal",
+      "letter": "H",
+      "kind": "format",
+      "visible": true
+    },
+    {
+      "name": "Hornbach",
+      "letter": "H",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "IHG",
+      "letter": "I",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "IKEA",
+      "letter": "I",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "IONOS",
+      "letter": "I",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "ITALO",
+      "letter": "I",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "ITB Berlin",
+      "letter": "I",
+      "kind": "format",
+      "visible": true,
+      "context": "trade-fair"
+    },
+    {
+      "name": "Jaz Hotels",
+      "letter": "J",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Junge",
+      "letter": "J",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Lexoffice",
+      "letter": "L",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "Lidl",
+      "letter": "L",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Lieferando",
+      "letter": "L",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "Lufthansa Group",
+      "letter": "L",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "McDonald's",
+      "letter": "M",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Mein Schiff",
+      "letter": "M",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "meinThema",
+      "letter": "M",
+      "kind": "format",
+      "visible": true
+    },
+    {
+      "name": "Mercedes-Benz",
+      "letter": "M",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Messe Berlin",
+      "letter": "M",
+      "kind": "entity",
+      "visible": true,
+      "context": "exhibition-operator"
+    },
+    {
+      "name": "Mrs. Greek",
+      "letter": "M",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "MSC Cruises",
+      "letter": "M",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "mytaxi",
+      "letter": "M",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "NDR",
+      "letter": "N",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Olympic Games",
+      "letter": "O",
+      "kind": "format",
+      "visible": true
+    },
+    {
+      "name": "OpenAI",
+      "letter": "O",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Paperless-ngx",
+      "letter": "P",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "PDM - Pizza Döner Man",
+      "letter": "P",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Penny",
+      "letter": "P",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Porta",
+      "letter": "P",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Potsdamer Platz Arkaden",
+      "letter": "P",
+      "kind": "place-location",
+      "visible": true
+    },
+    {
+      "name": "RBB",
+      "letter": "R",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "rbb24",
+      "letter": "R",
+      "kind": "format",
+      "visible": true
+    },
+    {
+      "name": "REWE",
+      "letter": "R",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Ring",
+      "letter": "R",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "RMV",
+      "letter": "R",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "Rosarios HSP (Hotel)",
+      "letter": "R",
+      "kind": "place-location",
+      "visible": true
+    },
+    {
+      "name": "S-Bahn Berlin",
+      "letter": "S",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "SBB",
+      "letter": "S",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "Senat von Berlin",
+      "letter": "S",
+      "kind": "public-body",
+      "visible": true
+    },
+    {
+      "name": "Seniovo",
+      "letter": "S",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Shop Apotheke",
+      "letter": "S",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Smart Life",
+      "letter": "S",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "Smarthotel Napoli",
+      "letter": "S",
+      "kind": "place-location",
+      "visible": true
+    },
+    {
+      "name": "Spotify",
+      "letter": "S",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "Synology",
+      "letter": "S",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Synology DSM",
+      "letter": "S",
+      "kind": "platform-app",
+      "visible": true,
+      "context": "system-software"
+    },
+    {
+      "name": "tado°",
+      "letter": "T",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "tagesschau",
+      "letter": "T",
+      "kind": "format",
+      "visible": true
+    },
+    {
+      "name": "Teleclinic",
+      "letter": "T",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "Terra X",
+      "letter": "T",
+      "kind": "format",
+      "visible": true
+    },
+    {
+      "name": "Terra Xplore",
+      "letter": "T",
+      "kind": "format",
+      "visible": true
+    },
+    {
+      "name": "TIER",
+      "letter": "T",
+      "kind": "infrastructure-service-system",
+      "visible": true,
+      "context": "mobility-service"
+    },
+    {
+      "name": "Tinder",
+      "letter": "T",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "Trenitalia",
+      "letter": "T",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "TUI",
+      "letter": "T",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "Uber",
+      "letter": "U",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "UPS",
+      "letter": "U",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "Vapiano",
+      "letter": "V",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "VBB",
+      "letter": "V",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "VGF",
+      "letter": "V",
+      "kind": "infrastructure-service-system",
+      "visible": true
+    },
+    {
+      "name": "Vueling",
+      "letter": "V",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "WAGO",
+      "letter": "W",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "WDR",
+      "letter": "W",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "WeWork",
+      "letter": "W",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "WISO",
+      "letter": "W",
+      "kind": "format",
+      "visible": true
+    },
+    {
+      "name": "Wizz Air",
+      "letter": "W",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "ZDF",
+      "letter": "Z",
+      "kind": "entity",
+      "visible": true
+    },
+    {
+      "name": "ZDF Berlin direkt",
+      "letter": "Z",
+      "kind": "format",
+      "visible": true
+    },
+    {
+      "name": "ZDF Frontal",
+      "letter": "Z",
+      "kind": "format",
+      "visible": true
+    },
+    {
+      "name": "ZDF Mediathek",
+      "letter": "Z",
+      "kind": "platform-app",
+      "visible": true,
+      "context": "media-library"
+    },
+    {
+      "name": "ZDF WISO",
+      "letter": "Z",
+      "kind": "format",
+      "visible": true
+    },
+    {
+      "name": "ZDFheute",
+      "letter": "Z",
+      "kind": "format",
+      "visible": true
+    },
+    {
+      "name": "ZDFmitreden",
+      "letter": "Z",
+      "kind": "platform-app",
+      "visible": true
+    },
+    {
+      "name": "ZDFWetter",
+      "letter": "Z",
+      "kind": "format",
+      "visible": true
+    },
+    {
+      "name": "Zebra",
+      "letter": "Z",
+      "kind": "entity",
+      "visible": true
+    }
+  ]
+}
