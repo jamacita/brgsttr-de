@@ -1,4 +1,4 @@
-name: Validate radar
+name: Check radar publication hygiene
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  validate-radar:
+  check-radar-public:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -20,8 +20,5 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Validate radar data
-        run: node tools/validate-radar.js
-
-      - name: Check generated radar HTML
-        run: node tools/build-radar.js --check
+      - name: Check public radar HTML and repository hygiene
+        run: node tools/check-radar-public.js
