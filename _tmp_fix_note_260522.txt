@@ -1,1 +1,0 @@
-cleanup still needed: index text artifacts and contact meta artifacts
