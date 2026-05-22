@@ -1,20 +1,55 @@
 name: Cleanup BRGSTTR text artifacts
 
-on: workflow_dispatch
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
   cleanup:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
       - run: |
-          python3 -c "from pathlib import Path; p=Path('index.html'); s=p.read_text(); s=s.replace('Purpose not','Useful when'); s=s.replace('contact. may be useful','Contact may be useful'); p.write_text(s)"
+          python3 - <<'PY'
+          from pathlib import Path
+          def t(name, close=False):
+              return chr(60) + ('/' if close else '') + name + chr(62)
+          p=Path('index.html')
+          s=p.read_text(encoding='utf-8')
+          s=s.replace('Purpose not','Useful when')
+          s=s.replace('contact. may be useful','Contact may be useful')
+          empty=t('li')+t('li', True)+'\n          '+t('li')+t('li', True)
+          s=s.replace(empty,'')
+          p.write_text(s, encoding='utf-8')
+          p=Path('contact/index.html')
+          s=p.read_text(encoding='utf-8')
+          s=s.replace('contact. BRGSTTR via welcome@brgsttr.de for precise, context-aware exchange.','Contact BRGSTTR via welcome@brgsttr.de for discreet, precise and context-aware exchange.')
+          s=s.replace('privacy. notice','Privacy notice')
+          p.write_text(s, encoding='utf-8')
+          p=Path('about/index.html')
+          s=p.read_text(encoding='utf-8')
+          s=s.replace('about. BRGSTTR as a reduced contact point for selective professional exchange.','About BRGSTTR as a quiet contact point for selected professional and conceptual exchange.')
+          s=s.replace('discretion.'+t('h2', True),'Discretion'+t('h2', True))
+          p.write_text(s, encoding='utf-8')
+          for f in ['_tmp_fix_note_260522.txt','.github/scripts/cleanup_simple_260522.py','.github/workflows/cleanup-text-artifacts-260522.yml']:
+              q=Path(f)
+              if q.exists():
+                  q.unlink()
+          PY
       - run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .
-          git commit -m cleanup || exit 0
-          git push
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Clean up BRGSTTR refactor artifacts"
+            git push
+          fi
