@@ -201,6 +201,40 @@ li { margin: 6px 0; }
   background: transparent;
 }
 
+.contact-form {
+  display: grid;
+  gap: 10px;
+  max-width: var(--measure);
+}
+
+.contact-form label {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--fg);
+  font: inherit;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.contact-form button {
+  justify-self: start;
+  background: transparent;
+  color: var(--fg);
+  cursor: pointer;
+}
+
 footer {
   margin-top: 48px;
   padding-top: 18px;

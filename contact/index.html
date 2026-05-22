@@ -35,6 +35,47 @@
         </div>
       </div>
 
+      <h2>Contact form</h2>
+      <div class="card">
+        <p class="muted">This form prepares an email locally in your browser. It does not send data through brgsttr.de.</p>
+        <form id="contact-form" class="contact-form">
+          <label for="cf-name">Name</label>
+          <input id="cf-name" name="name" type="text" autocomplete="name">
+          <label for="cf-email">Email</label>
+          <input id="cf-email" name="email" type="email" autocomplete="email">
+          <label for="cf-subject">Subject</label>
+          <input id="cf-subject" name="subject" type="text" value="Message via brgsttr.de" required>
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="7" required></textarea>
+          <button class="btn" type="submit">Prepare email</button>
+          <p id="cf-status" class="muted" aria-live="polite"></p>
+        </form>
+        <noscript><p class="muted">JavaScript is disabled. Please use the direct email link above.</p></noscript>
+      </div>
+
+      <script>
+      (function () {
+        var form = document.getElementById('contact-form');
+        if (!form) return;
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+          var name = document.getElementById('cf-name').value.trim();
+          var email = document.getElementById('cf-email').value.trim();
+          var subject = document.getElementById('cf-subject').value.trim() || 'Message via brgsttr.de';
+          var message = document.getElementById('cf-message').value.trim();
+          var body = [];
+          if (name) body.push('Name: ' + name);
+          if (email) body.push('Email: ' + email);
+          if (name || email) body.push('');
+          body.push(message);
+          var url = 'mailto:welcome@brgsttr.de?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body.join('\n'));
+          window.location.href = url;
+          var status = document.getElementById('cf-status');
+          if (status) status.textContent = 'Your email app should now open. Please review and send the message there.';
+        });
+      }());
+      </script>
+
       <h2>For collaboration or concept-related exchange</h2>
       <div class="card">
         <p><strong>Discrete. Precise. Effective.</strong></p>
