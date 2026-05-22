@@ -1,0 +1,20 @@
+name: Cleanup BRGSTTR text artifacts
+
+on: workflow_dispatch
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python3 -c "from pathlib import Path; p=Path('index.html'); s=p.read_text(); s=s.replace('Purpose not','Useful when'); s=s.replace('contact. may be useful','Contact may be useful'); p.write_text(s)"
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m cleanup || exit 0
+          git push
