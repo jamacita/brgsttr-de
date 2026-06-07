@@ -1,6 +1,8 @@
 User-agent: *
 Disallow: /radar/
 Disallow: /radar/index.html
+Disallow: /you/
+Disallow: /you/index.html
 Disallow: /_internal/
 Allow: /
 
