@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>proof. · BRGSTTR</title>
+  <meta name="description" content="Integrity proof for selected brgsttr.de materials: cryptographic content fingerprint, SHA-256 timestamp proof and independent verification context." />
+  <link rel="canonical" href="https://www.brgsttr.de/proof/" />
+  <meta property="og:site_name" content="BRGSTTR" />
+  <meta property="og:title" content="integrity proof · BRGSTTR" />
+  <meta property="og:description" content="A quiet proof layer for selected materials using cryptographic content fingerprints and timestamp-based traceability." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.brgsttr.de/proof/" />
+  <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="/" aria-label="BRGSTTR home">BRGSTTR</a>
+      <nav aria-label="Primary">
+        <a href="/">home.</a>
+        <a href="/about/">about.</a>
+        <a href="/discretion/">discretion.</a>
+        <a href="/notes/">notes.</a>
+        <a href="/access/">access.</a>
+        <a href="/contact/">contact.</a>
+      </nav>
+    </header>
+    <main>
+      <p class="kicker">Content fingerprint · timestamp proof · independent verification</p>
+      <h1>integrity proof.</h1>
+      <p class="lede">Selected materials may be assigned a cryptographic content fingerprint to support version integrity, timestamp-based traceability and controlled proof context.</p>
+      <div class="card"><p>A specific file or content version can be represented by a SHA-256 hash. This hash functions as a cryptographic fingerprint of that exact version. The original material does not need to be published for this process.</p></div>
+      <section aria-labelledby="proof-logic-title">
+        <h2 id="proof-logic-title">Proof logic</h2>
+        <ol>
+          <li>A stable file or content version is prepared.</li>
+          <li>A SHA-256 hash is generated as a cryptographic content fingerprint.</li>
+          <li>The hash may be timestamped through an external timestamping service such as OriginStamp.</li>
+          <li>The resulting proof can support later checks of existence timing and content integrity.</li>
+        </ol>
+      </section>
+      <section class="grid" aria-label="Integrity proof elements">
+        <article class="panel"><h2>Content fingerprint</h2><p>A hash represents a specific version. Even a small change to the underlying material produces a different fingerprint.</p></article>
+        <article class="panel"><h2>Timestamp proof</h2><p>The fingerprint may be anchored externally to support evidence that a specific version existed at or before a given time.</p></article>
+        <article class="panel"><h2>Independent verification</h2><p>Verification should be possible by recalculating the hash from the original file and comparing it with the stored proof record.</p></article>
+        <article class="panel"><h2>Controlled disclosure</h2><p>The proof layer supports integrity context without requiring the original material to be publicly exposed.</p></article>
+      </section>
+      <section aria-labelledby="limits-title">
+        <h2 id="limits-title">Limits</h2>
+        <p class="muted">This proof layer is an integrity and traceability signal. It does not replace contractual documentation, legal review, notarial certification, copyright registration or formal evidentiary procedures where such procedures are required.</p>
+      </section>
+      <section aria-labelledby="originstamp-title">
+        <h2 id="originstamp-title">External reference</h2>
+        <p class="muted">For the external timestamping layer, selected materials may refer to OriginStamp or a comparable timestamping service.</p>
+        <p><a href="https://originstamp.com/en/timestamp" target="_blank" rel="noopener noreferrer">Learn more about OriginStamp</a></p>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-line"><span>© BRGSTTR</span><span class="footer-sep">·</span><a href="/elsewhere/">elsewhere.</a><span class="footer-sep">·</span><a href="/boundaries/">boundaries.</a><span class="footer-sep">·</span><a href="/privacy/">privacy.</a><span class="footer-sep">·</span><a href="/contact/">contact.</a><span class="footer-sep">·</span><a href="/proof/" title="Cryptographic content fingerprint and timestamp proof">integrity proof</a></div>
+    </footer>
+  </div>
+</body>
+</html>
