@@ -4,6 +4,8 @@
   "current_state": "2026-06-16",
   "entries": [
     {"name":"AIDA","kind":"entity","owner_or_operator":"Carnival Corporation & plc / AIDA Cruises","verification_status":"plausible","verification_note":"Source pending."},
+    {"name":"ALDI Nord","kind":"entity","context":"retail-discount-grocery","owner_or_operator":"ALDI Nord Group","verification_status":"plausible","verification_note":"Primary ALDI Nord entry; detailed source verification pending."},
+    {"name":"ALDI SÜD","kind":"entity","context":"retail-discount-grocery-purchasing-cooperation","owner_or_operator":"ALDI SÜD Group","verification_status":"to_be_verified","verification_note":"Included for purchasing-cooperation context with ALDI Nord; separate legal group and cooperation scope should be verified."},
     {"name":"Alexa","kind":"platform-app","owner_or_operator":"Amazon.com, Inc.","verification_status":"plausible","verification_note":"Source pending."},
     {"name":"AliBUS","kind":"infrastructure-service-system","owner_or_operator":"ANM S.p.A.","verification_status":"to_be_verified","verification_note":"Local transport/operator detail should be checked before reliance."},
     {"name":"Amazon","kind":"entity","owner_or_operator":"Amazon.com, Inc.","verification_status":"plausible","verification_note":"Source pending."},
