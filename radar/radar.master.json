@@ -22,12 +22,23 @@
     "place-location",
     "infrastructure-service-system"
   ],
-  "entries": [
-    {"name":"Auto Plus","kind":"entity","context":"automotive-media"},
-    {"name":"Doctolib","kind":"platform-app"},
-    {"name":"Handelsblatt","kind":"entity","context":"media-newspaper-business"},
-    {"name":"Lidl","kind":"entity"},
-    {"name":"WELT (Tageszeitung)","kind":"entity","context":"media-newspaper-daily"},
-    {"name":"WeWork","kind":"entity"}
-  ]
+  "segments": [
+    {
+      "range": "a-f",
+      "path": "radar/master/a-f.json"
+    },
+    {
+      "range": "g-m",
+      "path": "radar/master/g-m.json"
+    },
+    {
+      "range": "n-z",
+      "path": "radar/master/n-z.json"
+    }
+  ],
+  "notes": {
+    "public_html_is_rendered_from_master": true,
+    "manual_updates_should_target_master_first": true,
+    "public_pages_must_not_contain_cross_brand_terms": true
+  }
 }
