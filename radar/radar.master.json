@@ -1,0 +1,33 @@
+{
+  "schema": "brgsttr-radar-master-v1",
+  "owner_scope": "brgsttr.de",
+  "status": "source-of-record",
+  "current_state": "2026-06-16",
+  "public_rendering": {
+    "path": "/radar/",
+    "indexing": "noindex, nofollow, noarchive, noimageindex, nosnippet"
+  },
+  "rules": {
+    "alphabetical": true,
+    "sector_labels_visible": false,
+    "rankings_visible": false,
+    "case_details_visible": false,
+    "cross_brand_terms_visible": false
+  },
+  "allowed_kinds": [
+    "entity",
+    "format",
+    "platform-app",
+    "public-body",
+    "place-location",
+    "infrastructure-service-system"
+  ],
+  "entries": [
+    {"name":"Auto Plus","kind":"entity","context":"automotive-media"},
+    {"name":"Doctolib","kind":"platform-app"},
+    {"name":"Handelsblatt","kind":"entity","context":"media-newspaper-business"},
+    {"name":"Lidl","kind":"entity"},
+    {"name":"WELT (Tageszeitung)","kind":"entity","context":"media-newspaper-daily"},
+    {"name":"WeWork","kind":"entity"}
+  ]
+}
