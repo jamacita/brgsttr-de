@@ -1,7 +1,7 @@
 # BRGSTTR Radar Masterliste nach owner/operator
 
 Stand: 2026-06-16
-Version: v3
+Version: v4
 
 > Strukturierte Arbeitsfassung auf Basis der BRGSTTR-Radar-Mastersegmente. Die Angaben sind als owner/operator zu verstehen, nicht als abschließend juristisch geprüfte Eigentümerfeststellung.
 
@@ -136,6 +136,7 @@ Version: v3
 - Teleclinic → DocMorris AG — `plausible`
 - Terra X → ZDF — `plausible`
 - Terra Xplore → ZDF — `plausible`
+- Threads → Meta Platforms, Inc. — `plausible`
 - TIER → Dott / TIER Mobility SE — `to_be_verified`
 - Tinder → Match Group — `plausible`
 - Trenitalia → Ferrovie dello Stato Italiane — `plausible`
@@ -145,6 +146,7 @@ Version: v3
 - Vapiano → Vapiano operator / franchise structure to be verified — `to_be_verified`
 - VBB → Verkehrsverbund Berlin-Brandenburg GmbH — `plausible`
 - VGF → Stadtwerke Frankfurt am Main / City of Frankfurt am Main — `plausible`
+- Voi → Voi Technology — `plausible`
 - Vueling → International Airlines Group — `plausible`
 - WAGO → WAGO Group — `plausible`
 - WDR → Westdeutscher Rundfunk — `plausible`
@@ -152,6 +154,7 @@ Version: v3
 - WeWork → Yardi Systems affiliates / SoftBank affiliates / other investors — `to_be_verified`
 - WISO → ZDF — `plausible`
 - Wizz Air → Wizz Air Holdings plc — `plausible`
+- YouTube → Google / Alphabet Inc. — `plausible`
 - ZDF → Zweites Deutsches Fernsehen — `plausible`
 - ZDF Berlin direkt → ZDF — `plausible`
 - ZDF Frontal → ZDF — `plausible`
@@ -373,6 +376,11 @@ Version: v3
 - Gorillas App — `platform-app` — `to_be_verified`
   - Note: Current app/brand status should be verified.
 
+## Google / Alphabet Inc.
+
+- YouTube — `platform-app` — context: `video-platform` — `plausible`
+  - Note: Working attribution to Google/Alphabet; detailed source verification pending.
+
 ## Hapag-Lloyd AG
 
 - Hapag-Lloyd — `entity` — context: `maritime-logistics` — `plausible`
@@ -493,6 +501,8 @@ Version: v3
 ## Meta Platforms, Inc.
 
 - Facebook — `platform-app` — `plausible`
+- Threads — `platform-app` — context: `social-media-microblogging` — `plausible`
+  - Note: Interpreted from user wording 'Threats' as Meta Threads; detailed source verification pending.
 
 ## Microsoft Corporation
 
@@ -622,6 +632,7 @@ Version: v3
 ## Uber Technologies, Inc.
 
 - Uber — `platform-app` — `plausible`
+  - Note: Already present; retained with current owner/operator working attribution.
 
 ## United Parcel Service, Inc.
 
@@ -635,6 +646,11 @@ Version: v3
 ## Verkehrsverbund Berlin-Brandenburg GmbH
 
 - VBB — `infrastructure-service-system` — `plausible`
+
+## Voi Technology
+
+- Voi — `infrastructure-service-system` — context: `micromobility-service` — `plausible`
+  - Note: Working attribution based on Voi Technology; detailed source verification pending.
 
 ## WAGO Group
 
