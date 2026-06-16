@@ -13,6 +13,8 @@
     {"name":"Hapag-Lloyd","kind":"entity","context":"maritime-logistics","owner_or_operator":"Hapag-Lloyd AG","verification_status":"plausible","verification_note":"Source pending."},
     {"name":"Handelsblatt","kind":"entity","context":"media-newspaper-business","owner_or_operator":"Dieter von Holtzbrinck Medien / Handelsblatt Media Group","verification_status":"plausible","verification_note":"Source pending."},
     {"name":"Hermes","kind":"infrastructure-service-system","owner_or_operator":"Otto Group","verification_status":"plausible","verification_note":"Source pending."},
+    {"name":"HIT","kind":"entity","context":"retail-grocery","owner_or_operator":"Dohle Handelsgruppe / HIT Handelsgruppe","verification_status":"plausible","verification_note":"Working attribution based on HIT/Dohle group structure; detailed source verification pending."},
+    {"name":"HIT Ullrich / Ullrich Verbrauchermarkt","kind":"entity","context":"retail-grocery-berlin-legacy-brand","owner_or_operator":"Dohle Handelsgruppe / HIT Handelsgruppe","verification_status":"to_be_verified","verification_note":"Included for Berlin Ullrich context; acquisition, former franchise and current operator/legal structure should be verified."},
     {"name":"heute journal","kind":"format","owner_or_operator":"ZDF","verification_status":"plausible","verification_note":"Source pending."},
     {"name":"Hornbach","kind":"entity","owner_or_operator":"HORNBACH Group","verification_status":"plausible","verification_note":"Source pending."},
     {"name":"IHG","kind":"entity","owner_or_operator":"InterContinental Hotels Group PLC","verification_status":"plausible","verification_note":"Source pending."},
