@@ -53,10 +53,21 @@
       <!--
         Internal maintenance taxonomy only; not displayed.
         Primary source of record: brgsttr/radar/radar.master.json.
-        Rendered grouping: owner_or_operator.
+        Rendered grouping: owner_or_operator with entity quick index.
         The public website repository contains this rendered view and the source segments.
         Allowed values: entity, format, platform-app, public-body, place-location, infrastructure-service-system.
       -->
+      <section aria-labelledby="entity-index-title">
+        <h2 id="entity-index-title">entity quick index.</h2>
+        <p class="muted">Alphabetical lookup of listed names. Each link jumps to the corresponding owner/operator group.</p>
+        <div id="entity-quick-index" class="card" aria-live="polite">
+          <p class="muted">Loading entity index…</p>
+        </div>
+        <noscript>
+          <p class="muted">JavaScript is required to render this index from the local master segments.</p>
+        </noscript>
+      </section>
+
       <section aria-labelledby="owner-operator-title">
         <h2 id="owner-operator-title">owner/operator.</h2>
         <p class="muted">Grouped from the BRGSTTR radar master segments.</p>
@@ -86,8 +97,9 @@
 
   <script>
     (function () {
-      var target = document.getElementById('owner-operator-list');
-      if (!target) return;
+      var indexTarget = document.getElementById('entity-quick-index');
+      var groupTarget = document.getElementById('owner-operator-list');
+      if (!indexTarget || !groupTarget) return;
 
       var segmentPaths = [
         '/radar/master/a-f.json',
@@ -107,7 +119,26 @@
         });
       }
 
-      function render(entries) {
+      function slug(value) {
+        return 'owner-' + String(value || 'to-be-verified')
+          .toLowerCase()
+          .replace(/[^a-z0-9]+/g, '-')
+          .replace(/^-+|-+$/g, '');
+      }
+
+      function renderIndex(entries) {
+        var sorted = entries.slice().sort(function (a, b) {
+          return String(a.name).localeCompare(String(b.name), 'en', { sensitivity: 'base' });
+        });
+
+        indexTarget.innerHTML = '<ul class="plain-list">' + sorted.map(function (entry) {
+          var owner = entry.owner_or_operator || 'to be verified';
+          return '<li><a href="#' + escapeHtml(slug(owner)) + '">' + escapeHtml(entry.name) + '</a>' +
+            ' <span class="muted">→ ' + escapeHtml(owner) + '</span></li>';
+        }).join('') + '</ul>';
+      }
+
+      function renderGroups(entries) {
         var groups = {};
         entries.forEach(function (entry) {
           var owner = entry.owner_or_operator || 'to be verified';
@@ -119,7 +150,7 @@
           return a.localeCompare(b, 'en', { sensitivity: 'base' });
         });
 
-        target.innerHTML = owners.map(function (owner) {
+        groupTarget.innerHTML = owners.map(function (owner) {
           var items = groups[owner].sort(function (a, b) {
             return String(a.name).localeCompare(String(b.name), 'en', { sensitivity: 'base' });
           }).map(function (entry) {
@@ -130,7 +161,7 @@
             return '<li><strong>' + escapeHtml(entry.name) + '</strong><br>' + meta + '</li>';
           }).join('');
 
-          return '<article class="panel">' +
+          return '<article class="panel" id="' + escapeHtml(slug(owner)) + '">' +
             '<h2>' + escapeHtml(owner) + '</h2>' +
             '<ul class="plain-list">' + items + '</ul>' +
             '</article>';
@@ -147,9 +178,11 @@
         segments.forEach(function (segment) {
           if (Array.isArray(segment.entries)) entries = entries.concat(segment.entries);
         });
-        render(entries);
+        renderIndex(entries);
+        renderGroups(entries);
       }).catch(function () {
-        target.innerHTML = '<article class="panel"><p class="muted">The owner/operator grouped radar view could not be loaded.</p></article>';
+        indexTarget.innerHTML = '<p class="muted">The entity quick index could not be loaded.</p>';
+        groupTarget.innerHTML = '<article class="panel"><p class="muted">The owner/operator grouped radar view could not be loaded.</p></article>';
       });
     }());
   </script>
