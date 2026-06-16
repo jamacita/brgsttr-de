@@ -37,6 +37,7 @@ Complex, local, legacy, franchise, transaction-related or otherwise non-final ca
 - Getir — owner/operator: Getir — note: Current corporate/brand status should be verified.
 - Gorillas — owner/operator: Getir — note: Current corporate/brand status should be verified.
 - Gorillas App — owner/operator: Getir — note: Current app/brand status should be verified.
+- HIT Ullrich / Ullrich Verbrauchermarkt — owner/operator: Dohle Handelsgruppe / HIT Handelsgruppe — note: Included for Berlin Ullrich context; acquisition, former franchise and current operator/legal structure should be verified.
 - ITALO — owner/operator: Italo S.p.A. / Mediterranean Shipping Company and Global Infrastructure Partners — note: Shareholding structure should be checked against current corporate disclosure.
 - Jaz Hotels — owner/operator: Travco Group / Jaz Hotel Group — note: Operator/group structure should be verified.
 - Mrs. Greek — owner/operator: independent local operator — note: Local operator to be verified.
