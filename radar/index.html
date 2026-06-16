@@ -37,6 +37,9 @@
         <p class="muted">
           Entries are deliberately grouped by owner/operator and shown without sector labels, rankings or explanatory claims. Owner/operator does not mean a final legal ownership statement in every case.
         </p>
+        <p class="muted">
+          Verification status: <strong>plausible</strong> means a working attribution with detailed source verification pending; <strong>to_be_verified</strong> marks complex, local, legacy, transaction-related or otherwise non-final cases.
+        </p>
         <p class="muted">Current state: 2026-06-16. Selectively maintained, non-exhaustive and subject to quiet revision.</p>
       </div>
 
@@ -53,7 +56,7 @@
       <!--
         Internal maintenance taxonomy only; not displayed.
         Primary source of record: brgsttr/radar/radar.master.json.
-        Rendered grouping: owner_or_operator with entity quick index.
+        Rendered grouping: owner_or_operator with entity quick index and verification status.
         The public website repository contains this rendered view and the source segments.
         Allowed values: entity, format, platform-app, public-body, place-location, infrastructure-service-system.
       -->
@@ -133,8 +136,9 @@
 
         indexTarget.innerHTML = '<ul class="plain-list">' + sorted.map(function (entry) {
           var owner = entry.owner_or_operator || 'to be verified';
+          var status = entry.verification_status || 'to_be_verified';
           return '<li><a href="#' + escapeHtml(slug(owner)) + '">' + escapeHtml(entry.name) + '</a>' +
-            ' <span class="muted">→ ' + escapeHtml(owner) + '</span></li>';
+            ' <span class="muted">→ ' + escapeHtml(owner) + ' · ' + escapeHtml(status) + '</span></li>';
         }).join('') + '</ul>';
       }
 
@@ -158,7 +162,11 @@
             if (entry.context) {
               meta += ' <span class="muted">· ' + escapeHtml(entry.context) + '</span>';
             }
-            return '<li><strong>' + escapeHtml(entry.name) + '</strong><br>' + meta + '</li>';
+            if (entry.verification_status) {
+              meta += ' <span class="muted">· ' + escapeHtml(entry.verification_status) + '</span>';
+            }
+            var note = entry.verification_note ? '<br><span class="muted">' + escapeHtml(entry.verification_note) + '</span>' : '';
+            return '<li><strong>' + escapeHtml(entry.name) + '</strong><br>' + meta + note + '</li>';
           }).join('');
 
           return '<article class="panel" id="' + escapeHtml(slug(owner)) + '">' +
