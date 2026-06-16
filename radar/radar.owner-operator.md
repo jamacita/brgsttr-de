@@ -4,6 +4,156 @@ Stand: 2026-06-16
 
 > Strukturierte Arbeitsfassung auf Basis der BRGSTTR-Radar-Mastersegmente. Die Angaben sind als owner/operator zu verstehen, nicht als abschließend juristisch geprüfte Eigentümerfeststellung.
 
+## Entity Quick Index
+
+- AIDA → Carnival Corporation & plc / AIDA Cruises
+- Alexa → Amazon.com, Inc.
+- AliBUS → ANM S.p.A.
+- Amazon → Amazon.com, Inc.
+- Anker → Anker Innovations
+- Apple → Apple Inc.
+- Apple Maps → Apple Inc.
+- ARD → ARD member broadcasters
+- ARD Mediathek → ARD member broadcasters
+- Auswärtiges Amt → Federal Republic of Germany
+- Auto Plus → Reworld Media
+- AVM / Fritz!Box → AVM GmbH / Imker Capital Partners
+- B&B Hotels → B&B Hotels Group / Goldman Sachs Alternatives
+- Bauhaus → BAUHAUS AG / private ownership
+- Berlin Brandenburg Airport (BER) → Flughafen Berlin Brandenburg GmbH
+- Berlin direkt → ZDF
+- Berliner Ordnungsamt → Land Berlin / district authorities
+- Blink → Amazon.com, Inc.
+- Booking.com → Booking Holdings Inc.
+- BSR (Berliner Stadtreinigung) → Land Berlin / BSR AöR
+- Bumble → Bumble Inc.
+- Bundesagentur für Arbeit → Bundesagentur für Arbeit
+- Bundesfinanzministerium → Federal Republic of Germany
+- Bundesinnenministerium → Federal Republic of Germany
+- Bundeskanzleramt → Federal Republic of Germany
+- Burger King → Restaurant Brands International
+- BVG → Land Berlin / BVG AöR
+- BVG Muva → BVG
+- ChatGPT → OpenAI
+- Check24 → CHECK24 Group
+- Clever Fit → clever fit GmbH / franchise partners
+- Cloudflare → Cloudflare, Inc.
+- DB Fernverkehr → Deutsche Bahn AG
+- DB Navigator → Deutsche Bahn AG
+- DB Sicherheit → Deutsche Bahn AG
+- DB Station & Service → Deutsche Bahn AG
+- DEKRA → DEKRA e.V. / DEKRA SE
+- Deutsche Rentenversicherung → Deutsche Rentenversicherung
+- DHL → DHL Group
+- Die Finals → ARD / ZDF / participating sports federations
+- Discover Airlines → Lufthansa Group
+- Docker → Docker, Inc.
+- Doctolib → Doctolib SAS
+- DPD → Geopost / La Poste Groupe
+- Durstexpress → Oetker Group / flaschenpost SE
+- easyapotheke → easyApotheke AG / partner pharmacies
+- easyJet → easyJet plc
+- Eis Gianni → independent local operator
+- Entwicklungsministerium → Federal Republic of Germany
+- Europäisches Parlament → European Union
+- Explora Journeys → MSC Group
+- Facebook → Meta Platforms, Inc.
+- Finanzguru → dwins GmbH
+- flaschenpost → Oetker Group
+- Flughafen Frankfurt/Main → Fraport AG
+- Fraport → Fraport AG
+- FREENOW → Lyft, Inc.
+- Frontal → ZDF
+- Getir → Getir
+- Giovanni Zarrella Show → ZDF
+- GitHub → Microsoft Corporation
+- Google → Alphabet Inc.
+- Google Maps → Alphabet Inc. / Google
+- Gorillas → Getir
+- Gorillas App → Getir
+- Hapag-Lloyd → Hapag-Lloyd AG
+- Handelsblatt → Dieter von Holtzbrinck Medien / Handelsblatt Media Group
+- Hermes → Otto Group
+- heute journal → ZDF
+- Hornbach → HORNBACH Group
+- IHG → InterContinental Hotels Group PLC
+- IKEA → Inter IKEA Group / Ingka Group
+- IONOS → IONOS Group SE / United Internet AG
+- ITALO → Italo S.p.A. / Mediterranean Shipping Company and Global Infrastructure Partners
+- ITB Berlin → Messe Berlin GmbH
+- Jaz Hotels → Jaz Hotel Group / Travco Group
+- Junge → Junge Die Bäckerei
+- Lexoffice → Haufe Group
+- Lidl → Schwarz Group
+- Lieferando → Just Eat Takeaway.com
+- Lufthansa Group → Deutsche Lufthansa AG
+- McDonald's → McDonald's Corporation
+- Mein Schiff → TUI Cruises GmbH / TUI AG and Royal Caribbean Group
+- meinThema → ZDF
+- Mercedes-Benz → Mercedes-Benz Group AG
+- Messe Berlin → Messe Berlin GmbH / Land Berlin
+- Mrs. Greek → independent local operator
+- MSC Cruises → MSC Group
+- MyPlace → MyPlace-SelfStorage operator group
+- mytaxi → Lyft, Inc. / FREENOW
+- NDR → Norddeutscher Rundfunk
+- Olympic Games → International Olympic Committee
+- OpenAI → OpenAI
+- Paperless-ngx → open-source community
+- PDM - Pizza Döner Man → independent local operator
+- Penny → REWE Group
+- Porta → Porta Group / planned XXXLutz acquisition subject to clearance
+- Potsdamer Platz Arkaden → site operator / property owner to be verified
+- RBB → Rundfunk Berlin-Brandenburg
+- rbb24 → Rundfunk Berlin-Brandenburg
+- REWE → REWE Group
+- Ring → Amazon.com, Inc.
+- RMV → Rhein-Main-Verkehrsverbund GmbH
+- Rosarios HSP (Hotel) → independent hotel operator
+- S-Bahn Berlin → Deutsche Bahn AG
+- SBB → Swiss Confederation / SBB AG
+- Senat von Berlin → Land Berlin
+- Seniovo → Seniovo GmbH
+- Shell → Shell plc
+- Shop Apotheke → Redcare Pharmacy N.V.
+- Smart Life → Tuya Inc.
+- Smarthotel Napoli → independent hotel operator
+- Spotify → Spotify Technology S.A.
+- Synology → Synology Inc.
+- Synology DSM → Synology Inc.
+- tado° → tado GmbH
+- tagesschau → ARD / Norddeutscher Rundfunk
+- Teleclinic → DocMorris AG
+- Terra X → ZDF
+- Terra Xplore → ZDF
+- TIER → Dott / TIER Mobility SE
+- Tinder → Match Group
+- Trenitalia → Ferrovie dello Stato Italiane
+- TUI → TUI AG
+- Uber → Uber Technologies, Inc.
+- UPS → United Parcel Service, Inc.
+- Vapiano → Vapiano operator / franchise structure to be verified
+- VBB → Verkehrsverbund Berlin-Brandenburg GmbH
+- VGF → Stadtwerke Frankfurt am Main / City of Frankfurt am Main
+- Vueling → International Airlines Group
+- WAGO → WAGO Group
+- WDR → Westdeutscher Rundfunk
+- WELT (Tageszeitung) → Axel Springer SE
+- WeWork → Yardi Systems affiliates / SoftBank affiliates / other investors
+- WISO → ZDF
+- Wizz Air → Wizz Air Holdings plc
+- ZDF → Zweites Deutsches Fernsehen
+- ZDF Berlin direkt → ZDF
+- ZDF Frontal → ZDF
+- ZDF Mediathek → ZDF
+- ZDF WISO → ZDF
+- ZDFheute → ZDF
+- ZDFmitreden → ZDF
+- ZDFWetter → ZDF
+- Zebra → Zebra Technologies Corporation
+
+## Owner/operator Groups
+
 ## Alphabet Inc.
 
 - Google — `entity`
