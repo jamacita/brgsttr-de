@@ -6,11 +6,13 @@
   "public_rendering": {
     "path": "/radar/",
     "grouping": "owner_or_operator",
+    "quick_index": "entity_name",
     "indexing": "noindex, nofollow, noarchive, noimageindex, nosnippet"
   },
   "rules": {
     "alphabetical": true,
     "primary_grouping": "owner_or_operator",
+    "quick_index": "entity_name_to_owner_or_operator",
     "sector_labels_visible": false,
     "rankings_visible": false,
     "case_details_visible": false,
@@ -42,12 +44,14 @@
     {
       "format": "html",
       "path": "radar/index.html",
-      "grouping": "owner_or_operator"
+      "grouping": "owner_or_operator",
+      "quick_index": "entity_name"
     },
     {
       "format": "markdown",
       "path": "radar/radar.owner-operator.md",
-      "grouping": "owner_or_operator"
+      "grouping": "owner_or_operator",
+      "quick_index": "entity_name_to_owner_or_operator"
     }
   ],
   "notes": {
