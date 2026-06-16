@@ -1,7 +1,7 @@
 # BRGSTTR Radar Masterliste nach owner/operator
 
 Stand: 2026-06-16
-Version: v2
+Version: v3
 
 > Strukturierte Arbeitsfassung auf Basis der BRGSTTR-Radar-Mastersegmente. Die Angaben sind als owner/operator zu verstehen, nicht als abschließend juristisch geprüfte Eigentümerfeststellung.
 
@@ -82,6 +82,8 @@ Version: v2
 - Hapag-Lloyd → Hapag-Lloyd AG — `plausible`
 - Handelsblatt → Dieter von Holtzbrinck Medien / Handelsblatt Media Group — `plausible`
 - Hermes → Otto Group — `plausible`
+- HIT → Dohle Handelsgruppe / HIT Handelsgruppe — `plausible`
+- HIT Ullrich / Ullrich Verbrauchermarkt → Dohle Handelsgruppe / HIT Handelsgruppe — `to_be_verified`
 - heute journal → ZDF — `plausible`
 - Hornbach → HORNBACH Group — `plausible`
 - IHG → InterContinental Hotels Group PLC — `plausible`
@@ -307,6 +309,13 @@ Version: v2
 ## Doctolib SAS
 
 - Doctolib — `platform-app` — `plausible`
+
+## Dohle Handelsgruppe / HIT Handelsgruppe
+
+- HIT — `entity` — context: `retail-grocery` — `plausible`
+  - Note: Working attribution based on HIT/Dohle group structure; detailed source verification pending.
+- HIT Ullrich / Ullrich Verbrauchermarkt — `entity` — context: `retail-grocery-berlin-legacy-brand` — `to_be_verified`
+  - Note: Included for Berlin Ullrich context; acquisition, former franchise and current operator/legal structure should be verified.
 
 ## Dott / TIER Mobility SE
 
