@@ -18,6 +18,7 @@ Complex, local, legacy, franchise, transaction-related or otherwise non-final ca
 
 ### A–F
 
+- ALDI SÜD — owner/operator: ALDI SÜD Group — note: Included for purchasing-cooperation context with ALDI Nord; separate legal group and cooperation scope should be verified.
 - AliBUS — owner/operator: ANM S.p.A. — note: Local transport/operator detail should be checked before reliance.
 - Auto Plus — owner/operator: Reworld Media — note: Media ownership should be checked against current publisher/imprint.
 - AVM / Fritz!Box — owner/operator: AVM GmbH / Imker Capital Partners — note: Private-equity ownership and transaction status should be verified.
