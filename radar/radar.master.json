@@ -7,12 +7,18 @@
     "path": "/radar/",
     "grouping": "owner_or_operator",
     "quick_index": "entity_name",
+    "verification_display": true,
     "indexing": "noindex, nofollow, noarchive, noimageindex, nosnippet"
   },
   "rules": {
     "alphabetical": true,
     "primary_grouping": "owner_or_operator",
     "quick_index": "entity_name_to_owner_or_operator",
+    "verification_status_values": [
+      "plausible",
+      "to_be_verified"
+    ],
+    "verified_status_reserved_for_source_checked_entries": true,
     "sector_labels_visible": false,
     "rankings_visible": false,
     "case_details_visible": false,
@@ -45,19 +51,27 @@
       "format": "html",
       "path": "radar/index.html",
       "grouping": "owner_or_operator",
-      "quick_index": "entity_name"
+      "quick_index": "entity_name",
+      "verification_display": true
     },
     {
       "format": "markdown",
       "path": "radar/radar.owner-operator.md",
       "grouping": "owner_or_operator",
       "quick_index": "entity_name_to_owner_or_operator"
+    },
+    {
+      "format": "markdown",
+      "path": "radar/radar.verification.md",
+      "purpose": "verification overview",
+      "status_focus": "to_be_verified"
     }
   ],
   "notes": {
     "public_html_is_rendered_from_master": true,
     "manual_updates_should_target_master_first": true,
     "public_pages_must_not_contain_cross_brand_terms": true,
-    "owner_or_operator_is_not_always_final_legal_ownership": true
+    "owner_or_operator_is_not_always_final_legal_ownership": true,
+    "no_entry_is_currently_marked_verified": true
   }
 }
