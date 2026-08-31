@@ -272,3 +272,30 @@ hr {
 
   .hero { padding-top: 26px; }
 }
+
+
+.trace-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+  max-width: 720px;
+}
+
+.trace {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px;
+}
+
+.trace h2 {
+  margin-top: 0;
+}
+
+.trace-label {
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
