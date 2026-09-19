@@ -1,5 +1,5 @@
 {
-  "schema": "./case-schema.json",
+  "schema": "./published-index-schema.json",
   "last_updated": "2026-09-19",
   "ordering": "chronological_by_initiative_start_not_rank",
   "cases": [
@@ -8,156 +8,202 @@
       "entity_or_brand": "Volvo Cars",
       "period": "1959",
       "initiative": "Three-point safety belt and open patent",
-      "dimension": ["innovation", "industry_or_ecosystem_standard"],
+      "dimension": [
+        "innovation",
+        "industry_or_ecosystem_standard"
+      ],
       "measure_scale": "system",
       "reference_level": "ecosystem",
       "maturity": "historical",
       "status": "historical",
       "publication_state": "published",
-      "last_reviewed": "2026-09-19"
+      "last_reviewed": "2026-09-19",
+      "public_anchor": "case-volvo-three-point-seatbelt"
     },
     {
       "case_id": "bosch-electronic-abs",
       "entity_or_brand": "Bosch",
       "period": "1978",
       "initiative": "Production-ready electronic ABS",
-      "dimension": ["innovation", "industry_or_ecosystem_standard"],
+      "dimension": [
+        "innovation",
+        "industry_or_ecosystem_standard"
+      ],
       "measure_scale": "system",
       "reference_level": "sectoral",
       "maturity": "historical",
       "status": "historical",
       "publication_state": "published",
-      "last_reviewed": "2026-09-19"
+      "last_reviewed": "2026-09-19",
+      "public_anchor": "case-bosch-electronic-abs"
     },
     {
       "case_id": "interface-mission-zero",
       "entity_or_brand": "Interface",
       "period": "1994–2020",
       "initiative": "Mission Zero",
-      "dimension": ["leadership", "innovation"],
+      "dimension": [
+        "leadership",
+        "innovation"
+      ],
       "measure_scale": "programme",
       "reference_level": "internal",
       "maturity": "completed",
       "status": "historical",
       "publication_state": "published",
-      "last_reviewed": "2026-09-19"
+      "last_reviewed": "2026-09-19",
+      "public_anchor": "case-interface-mission-zero"
     },
     {
       "case_id": "dhl-packstation",
       "entity_or_brand": "DHL",
       "period": "2001–present",
       "initiative": "Packstation",
-      "dimension": ["process_or_service_quality", "innovation"],
+      "dimension": [
+        "process_or_service_quality",
+        "innovation"
+      ],
       "measure_scale": "system",
       "reference_level": "customer_facing",
       "maturity": "scaled",
       "status": "current",
       "publication_state": "published",
-      "last_reviewed": "2026-09-19"
+      "last_reviewed": "2026-09-19",
+      "public_anchor": "case-dhl-packstation"
     },
     {
       "case_id": "dove-real-beauty",
       "entity_or_brand": "Dove",
       "period": "2004–present",
       "initiative": "Campaign for Real Beauty / Real Beauty Pledge",
-      "dimension": ["brand_stewardship"],
+      "dimension": [
+        "brand_stewardship"
+      ],
       "measure_scale": "programme",
       "reference_level": "customer_facing",
       "maturity": "active",
       "status": "current",
       "publication_state": "published",
-      "last_reviewed": "2026-09-19"
+      "last_reviewed": "2026-09-19",
+      "public_anchor": "case-dove-real-beauty"
     },
     {
       "case_id": "mastercard-true-name",
       "entity_or_brand": "Mastercard",
       "period": "2019–present",
       "initiative": "True Name",
-      "dimension": ["process_or_service_quality", "innovation"],
+      "dimension": [
+        "process_or_service_quality",
+        "innovation"
+      ],
       "measure_scale": "feature",
       "reference_level": "sectoral",
       "maturity": "active",
       "status": "current",
       "publication_state": "published",
-      "last_reviewed": "2026-09-19"
+      "last_reviewed": "2026-09-19",
+      "public_anchor": "case-mastercard-true-name"
     },
     {
       "case_id": "lego-braille-bricks",
       "entity_or_brand": "LEGO",
       "period": "2019–present",
       "initiative": "Braille Bricks",
-      "dimension": ["innovation", "process_or_service_quality"],
+      "dimension": [
+        "innovation",
+        "process_or_service_quality"
+      ],
       "measure_scale": "programme",
       "reference_level": "customer_facing",
       "maturity": "scaled",
       "status": "current",
       "publication_state": "published",
-      "last_reviewed": "2026-09-19"
+      "last_reviewed": "2026-09-19",
+      "public_anchor": "case-lego-braille-bricks"
     },
     {
       "case_id": "apple-app-privacy-framework",
       "entity_or_brand": "Apple",
       "period": "2020–2021 onward",
       "initiative": "App privacy labels and App Tracking Transparency",
-      "dimension": ["process_or_service_quality", "industry_or_ecosystem_standard"],
+      "dimension": [
+        "process_or_service_quality",
+        "industry_or_ecosystem_standard"
+      ],
       "measure_scale": "system",
       "reference_level": "ecosystem",
       "maturity": "active",
       "status": "current",
       "publication_state": "published",
-      "last_reviewed": "2026-09-19"
+      "last_reviewed": "2026-09-19",
+      "public_anchor": "case-apple-app-privacy-framework"
     },
     {
       "case_id": "ikea-buyback-second-chance",
       "entity_or_brand": "IKEA",
       "period": "2020–present",
       "initiative": "Buyback Friday and Second-Chance return service",
-      "dimension": ["brand_stewardship", "process_or_service_quality"],
+      "dimension": [
+        "brand_stewardship",
+        "process_or_service_quality"
+      ],
       "measure_scale": "programme",
       "reference_level": "customer_facing",
       "maturity": "active",
       "status": "current",
       "publication_state": "published",
-      "last_reviewed": "2026-09-19"
+      "last_reviewed": "2026-09-19",
+      "public_anchor": "case-ikea-buyback-second-chance"
     },
     {
       "case_id": "patagonia-purpose-ownership",
       "entity_or_brand": "Patagonia",
       "period": "2022–present",
       "initiative": "Purpose Trust and Holdfast Collective ownership structure",
-      "dimension": ["corporate_governance", "leadership"],
+      "dimension": [
+        "corporate_governance",
+        "leadership"
+      ],
       "measure_scale": "structural_change",
       "reference_level": "internal",
       "maturity": "active",
       "status": "current",
       "publication_state": "published",
-      "last_reviewed": "2026-09-19"
+      "last_reviewed": "2026-09-19",
+      "public_anchor": "case-patagonia-purpose-ownership"
     },
     {
       "case_id": "db-regio-occupancy-forecast",
       "entity_or_brand": "Deutsche Bahn / DB Regio",
       "period": "2024–present",
       "initiative": "Advance occupancy forecasts",
-      "dimension": ["process_or_service_quality"],
+      "dimension": [
+        "process_or_service_quality"
+      ],
       "measure_scale": "feature",
       "reference_level": "customer_facing",
       "maturity": "active",
       "status": "current",
       "publication_state": "published",
-      "last_reviewed": "2026-09-19"
+      "last_reviewed": "2026-09-19",
+      "public_anchor": "case-db-regio-occupancy-forecast"
     },
     {
       "case_id": "dmbio-refill-pilot",
       "entity_or_brand": "dmBio",
       "period": "2024",
       "initiative": "In-store refill stations",
-      "dimension": ["innovation", "process_or_service_quality"],
+      "dimension": [
+        "innovation",
+        "process_or_service_quality"
+      ],
       "measure_scale": "pilot",
       "reference_level": "customer_facing",
       "maturity": "pilot",
       "status": "historical",
       "publication_state": "published",
-      "last_reviewed": "2026-09-19"
+      "last_reviewed": "2026-09-19",
+      "public_anchor": "case-dmbio-refill-pilot"
     }
   ]
 }
