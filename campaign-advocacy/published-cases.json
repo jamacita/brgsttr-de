@@ -443,6 +443,103 @@
       "review_due": "2029-09-19",
       "source_last_checked": "2026-09-19",
       "change_monitoring": "material_change"
+    },
+    {
+      "case_id": "gatwick-hidden-disabilities-sunflower",
+      "public_anchor": "case-gatwick-hidden-disabilities-sunflower",
+      "entity_or_brand": "Gatwick Airport / Hidden Disabilities Sunflower",
+      "period": "2016–present",
+      "initiative": "Sunflower lanyard for non-visible disabilities",
+      "dimension": [
+        "process_or_service_quality",
+        "innovation",
+        "voluntary_self_standard",
+        "industry_or_ecosystem_standard"
+      ],
+      "measure_scale": "micro_measure",
+      "reference_level": "ecosystem",
+      "maturity": "scaled",
+      "status": "current",
+      "publication_state": "published",
+      "last_reviewed": "2026-09-19",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "review_due": "2027-09-19",
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "periodic"
+    },
+    {
+      "case_id": "adobe-cai-c2pa-provenance",
+      "public_anchor": "case-adobe-cai-c2pa-provenance",
+      "entity_or_brand": "Adobe / Content Authenticity Initiative / C2PA",
+      "period": "2019–present",
+      "initiative": "Open digital-content provenance standard development",
+      "dimension": [
+        "innovation",
+        "voluntary_self_standard",
+        "industry_or_ecosystem_standard"
+      ],
+      "measure_scale": "system",
+      "reference_level": "ecosystem",
+      "maturity": "active",
+      "status": "current",
+      "publication_state": "published",
+      "last_reviewed": "2026-09-19",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "review_due": "2027-09-19",
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "periodic"
+    },
+    {
+      "case_id": "lego-replay",
+      "public_anchor": "case-lego-replay",
+      "entity_or_brand": "LEGO Group",
+      "period": "2019–present",
+      "initiative": "LEGO Replay brick take-back and recirculation programme",
+      "dimension": [
+        "process_or_service_quality",
+        "innovation",
+        "voluntary_self_standard"
+      ],
+      "measure_scale": "programme",
+      "reference_level": "customer_facing",
+      "maturity": "active",
+      "status": "current",
+      "publication_state": "published",
+      "last_reviewed": "2026-09-19",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "review_due": "2027-09-19",
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "periodic"
+    },
+    {
+      "case_id": "oxo-good-grips-universal-design",
+      "public_anchor": "case-oxo-good-grips-universal-design",
+      "entity_or_brand": "OXO / Smart Design",
+      "period": "1989–1990 onward",
+      "initiative": "Good Grips universal-design kitchen tools",
+      "dimension": [
+        "innovation",
+        "process_or_service_quality",
+        "industry_or_ecosystem_standard"
+      ],
+      "measure_scale": "system",
+      "reference_level": "sectoral",
+      "maturity": "historical",
+      "status": "historical",
+      "publication_state": "published",
+      "last_reviewed": "2026-09-19",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "review_due": "2029-09-19",
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "material_change"
     }
   ]
 }
