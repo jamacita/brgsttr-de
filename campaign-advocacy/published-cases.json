@@ -18,7 +18,13 @@
       "status": "historical",
       "publication_state": "published",
       "last_reviewed": "2026-09-19",
-      "public_anchor": "case-volvo-three-point-seatbelt"
+      "public_anchor": "case-volvo-three-point-seatbelt",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "material_change",
+      "review_due": "2029-09-19"
     },
     {
       "case_id": "bosch-electronic-abs",
@@ -35,7 +41,13 @@
       "status": "historical",
       "publication_state": "published",
       "last_reviewed": "2026-09-19",
-      "public_anchor": "case-bosch-electronic-abs"
+      "public_anchor": "case-bosch-electronic-abs",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "material_change",
+      "review_due": "2029-09-19"
     },
     {
       "case_id": "interface-mission-zero",
@@ -52,7 +64,13 @@
       "status": "historical",
       "publication_state": "published",
       "last_reviewed": "2026-09-19",
-      "public_anchor": "case-interface-mission-zero"
+      "public_anchor": "case-interface-mission-zero",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "material_change",
+      "review_due": "2029-09-19"
     },
     {
       "case_id": "dhl-packstation",
@@ -69,7 +87,13 @@
       "status": "current",
       "publication_state": "published",
       "last_reviewed": "2026-09-19",
-      "public_anchor": "case-dhl-packstation"
+      "public_anchor": "case-dhl-packstation",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "periodic",
+      "review_due": "2028-03-19"
     },
     {
       "case_id": "dove-real-beauty",
@@ -85,7 +109,13 @@
       "status": "current",
       "publication_state": "published",
       "last_reviewed": "2026-09-19",
-      "public_anchor": "case-dove-real-beauty"
+      "public_anchor": "case-dove-real-beauty",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "periodic",
+      "review_due": "2027-09-19"
     },
     {
       "case_id": "mastercard-true-name",
@@ -102,7 +132,13 @@
       "status": "current",
       "publication_state": "published",
       "last_reviewed": "2026-09-19",
-      "public_anchor": "case-mastercard-true-name"
+      "public_anchor": "case-mastercard-true-name",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "periodic",
+      "review_due": "2027-09-19"
     },
     {
       "case_id": "lego-braille-bricks",
@@ -119,7 +155,13 @@
       "status": "current",
       "publication_state": "published",
       "last_reviewed": "2026-09-19",
-      "public_anchor": "case-lego-braille-bricks"
+      "public_anchor": "case-lego-braille-bricks",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "periodic",
+      "review_due": "2028-03-19"
     },
     {
       "case_id": "apple-app-privacy-framework",
@@ -136,7 +178,13 @@
       "status": "current",
       "publication_state": "published",
       "last_reviewed": "2026-09-19",
-      "public_anchor": "case-apple-app-privacy-framework"
+      "public_anchor": "case-apple-app-privacy-framework",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "periodic",
+      "review_due": "2027-09-19"
     },
     {
       "case_id": "ikea-buyback-second-chance",
@@ -153,7 +201,13 @@
       "status": "current",
       "publication_state": "published",
       "last_reviewed": "2026-09-19",
-      "public_anchor": "case-ikea-buyback-second-chance"
+      "public_anchor": "case-ikea-buyback-second-chance",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "periodic",
+      "review_due": "2027-09-19"
     },
     {
       "case_id": "patagonia-purpose-ownership",
@@ -170,7 +224,13 @@
       "status": "current",
       "publication_state": "published",
       "last_reviewed": "2026-09-19",
-      "public_anchor": "case-patagonia-purpose-ownership"
+      "public_anchor": "case-patagonia-purpose-ownership",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "periodic",
+      "review_due": "2027-09-19"
     },
     {
       "case_id": "db-regio-occupancy-forecast",
@@ -186,7 +246,13 @@
       "status": "current",
       "publication_state": "published",
       "last_reviewed": "2026-09-19",
-      "public_anchor": "case-db-regio-occupancy-forecast"
+      "public_anchor": "case-db-regio-occupancy-forecast",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "periodic",
+      "review_due": "2027-09-19"
     },
     {
       "case_id": "dmbio-refill-pilot",
@@ -203,7 +269,13 @@
       "status": "historical",
       "publication_state": "published",
       "last_reviewed": "2026-09-19",
-      "public_anchor": "case-dmbio-refill-pilot"
+      "public_anchor": "case-dmbio-refill-pilot",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "periodic",
+      "review_due": "2027-09-19"
     }
   ]
 }
