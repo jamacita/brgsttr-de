@@ -22,3 +22,6 @@ jobs:
 
       - name: Check public radar HTML and repository hygiene
         run: node tools/check-radar-public.js
+
+      - name: Check public identity separation
+        run: node tools/check-public-separation.js
