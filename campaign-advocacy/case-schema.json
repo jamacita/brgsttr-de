@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.brgsttr.de/campaign-advocacy/case-schema.json",
+  "title": "BRGSTTR Campaign Advocacy Case",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "entity_or_brand",
+    "period",
+    "initiative",
+    "dimension",
+    "measure_scale",
+    "reference_level",
+    "maturity",
+    "factual_description",
+    "observed_significance",
+    "public_basis",
+    "status",
+    "last_reviewed"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "entity_or_brand": {"type": "string", "minLength": 1},
+    "period": {"type": "string", "minLength": 1},
+    "initiative": {"type": "string", "minLength": 1},
+    "dimension": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "brand_stewardship",
+          "corporate_governance",
+          "leadership",
+          "process_or_service_quality",
+          "innovation",
+          "industry_or_ecosystem_standard"
+        ]
+      }
+    },
+    "measure_scale": {
+      "enum": ["micro_measure", "feature", "pilot", "programme", "system", "structural_change"]
+    },
+    "reference_level": {
+      "enum": ["internal", "customer_facing", "sectoral", "ecosystem"]
+    },
+    "maturity": {
+      "enum": ["pilot", "active", "scaled", "completed", "historical", "revised"]
+    },
+    "factual_description": {"type": "string", "minLength": 1},
+    "observed_significance": {"type": "string", "minLength": 1},
+    "public_basis": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title", "url", "source_type"],
+        "properties": {
+          "title": {"type": "string", "minLength": 1},
+          "url": {"type": "string", "format": "uri"},
+          "source_type": {"enum": ["primary", "reliable_secondary"]},
+          "date": {"type": "string"}
+        }
+      }
+    },
+    "status": {
+      "enum": ["current", "historical", "revised", "no_longer_applicable"]
+    },
+    "publication_state": {
+      "enum": ["published", "withdrawn"],
+      "default": "published"
+    },
+    "last_reviewed": {
+      "type": "string",
+      "format": "date"
+    },
+    "supersedes": {
+      "type": ["string", "null"]
+    }
+  }
+}
