@@ -1,29 +1,24 @@
 {
+  "case_id": "",
   "entity_or_brand": "",
   "period": "",
   "initiative": "",
-  "dimension": [
-    "brand_stewardship",
-    "corporate_governance",
-    "leadership",
-    "process_or_service_quality",
-    "innovation",
-    "industry_or_ecosystem_standard"
-  ],
-  "measure_scale": "micro_measure | feature | pilot | programme | system | structural_change",
-  "reference_level": "internal | customer_facing | sectoral | ecosystem",
-  "maturity": "pilot | active | scaled | completed | historical | revised",
+  "dimension": [],
+  "measure_scale": "micro_measure",
+  "reference_level": "customer_facing",
+  "maturity": "pilot",
   "factual_description": "",
   "observed_significance": "",
   "public_basis": [
     {
       "title": "",
       "url": "",
-      "source_type": "primary | reliable_secondary",
+      "source_type": "primary",
       "date": ""
     }
   ],
-  "status": "current | historical | revised | no_longer_applicable",
-  "editorial_notes": "",
-  "last_reviewed": ""
+  "status": "current",
+  "publication_state": "published",
+  "last_reviewed": "YYYY-MM-DD",
+  "supersedes": null
 }
