@@ -540,6 +540,28 @@
       "review_due": "2029-09-19",
       "source_last_checked": "2026-09-19",
       "change_monitoring": "material_change"
+    },
+    {
+      "case_id": "apple-self-service-repair",
+      "public_anchor": "case-apple-self-service-repair",
+      "entity_or_brand": "Apple",
+      "period": "2021–present",
+      "initiative": "Self Service Repair and expanded direct repair access",
+      "dimension": [
+        "process_or_service_quality"
+      ],
+      "measure_scale": "programme",
+      "reference_level": "customer_facing",
+      "maturity": "active",
+      "status": "current",
+      "publication_state": "published",
+      "last_reviewed": "2026-09-19",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "review_due": "2027-09-19",
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "periodic"
     }
   ]
 }
