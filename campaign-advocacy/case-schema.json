@@ -24,7 +24,8 @@
     "first_published",
     "review_due",
     "source_last_checked",
-    "change_monitoring"
+    "change_monitoring",
+    "primary_theme"
   ],
   "properties": {
     "case_id": {
@@ -215,6 +216,16 @@
       "type": [
         "string",
         "null"
+      ]
+    },
+    "primary_theme": {
+      "enum": [
+        "inclusive_design_accessibility",
+        "service_design_customer_autonomy",
+        "repairability_longevity_circular_use",
+        "brand_stewardship_public_communication",
+        "governance_leadership_voluntary_commitments",
+        "safety_privacy_open_standards"
       ]
     }
   }
