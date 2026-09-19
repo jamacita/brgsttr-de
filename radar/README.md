@@ -2,7 +2,7 @@
 
 ## 1. Purpose
 
-`/radar/` is a quiet A-Z orientation layer for entities, organisations, brands, formats and public bodies that have appeared in interaction, observation, feedback, concept, product or value-contribution contexts connected with Jamacita or BRGSTTR.
+`/radar/` is a quiet A-Z orientation layer for entities, organisations, brands, formats and public bodies that have appeared in interaction, observation, feedback, concept, product or value-contribution contexts relevant to BRGSTTR.
 
 It is not a client list, partnership statement, endorsement claim, public attribution archive or statement of consent by any listed entity.
 
@@ -10,10 +10,7 @@ It is not a client list, partnership statement, endorsement claim, public attrib
 
 The structured maintenance source is private and must not be committed to the public website repository.
 
-```text
-Private repository: jamacita/jamacita-method-private
-Private path: brgsttr/radar/radar.json
-```
+The private source location is intentionally not documented in this public repository.
 
 The public website repository contains only the rendered static HTML page:
 
