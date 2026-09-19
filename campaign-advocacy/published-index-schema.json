@@ -4,27 +4,69 @@
   "title": "BRGSTTR Campaign Advocacy Published Case Index",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema", "last_updated", "ordering", "cases"],
+  "required": [
+    "schema",
+    "last_updated",
+    "ordering",
+    "cases"
+  ],
   "properties": {
-    "schema": {"type": "string"},
-    "last_updated": {"type": "string", "format": "date"},
-    "ordering": {"type": "string"},
+    "schema": {
+      "type": "string"
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "ordering": {
+      "type": "string"
+    },
     "cases": {
       "type": "array",
       "items": {
         "type": "object",
         "additionalProperties": false,
         "required": [
-          "case_id", "public_anchor", "entity_or_brand", "period", "initiative",
-          "dimension", "measure_scale", "reference_level", "maturity",
-          "status", "publication_state", "last_reviewed"
+          "case_id",
+          "public_anchor",
+          "entity_or_brand",
+          "period",
+          "initiative",
+          "dimension",
+          "measure_scale",
+          "reference_level",
+          "maturity",
+          "status",
+          "publication_state",
+          "last_reviewed",
+          "case_version",
+          "first_published",
+          "last_material_revision",
+          "review_due",
+          "source_last_checked",
+          "change_monitoring"
         ],
         "properties": {
-          "case_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
-          "public_anchor": {"type": "string", "pattern": "^case-[a-z0-9]+(?:-[a-z0-9]+)*$"},
-          "entity_or_brand": {"type": "string", "minLength": 1},
-          "period": {"type": "string", "minLength": 1},
-          "initiative": {"type": "string", "minLength": 1},
+          "case_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "public_anchor": {
+            "type": "string",
+            "pattern": "^case-[a-z0-9]+(?:-[a-z0-9]+)*$"
+          },
+          "entity_or_brand": {
+            "type": "string",
+            "minLength": 1
+          },
+          "period": {
+            "type": "string",
+            "minLength": 1
+          },
+          "initiative": {
+            "type": "string",
+            "minLength": 1
+          },
           "dimension": {
             "type": "array",
             "minItems": 1,
@@ -36,24 +78,90 @@
                 "leadership",
                 "process_or_service_quality",
                 "innovation",
+                "voluntary_self_standard",
                 "industry_or_ecosystem_standard"
               ]
             }
           },
           "measure_scale": {
-            "enum": ["micro_measure", "feature", "pilot", "programme", "system", "structural_change"]
+            "enum": [
+              "micro_measure",
+              "feature",
+              "pilot",
+              "programme",
+              "system",
+              "structural_change"
+            ]
           },
           "reference_level": {
-            "enum": ["internal", "customer_facing", "sectoral", "ecosystem"]
+            "enum": [
+              "internal",
+              "customer_facing",
+              "sectoral",
+              "ecosystem"
+            ]
           },
           "maturity": {
-            "enum": ["pilot", "active", "scaled", "completed", "historical", "revised"]
+            "enum": [
+              "pilot",
+              "active",
+              "scaled",
+              "completed",
+              "historical",
+              "revised"
+            ]
           },
           "status": {
-            "enum": ["current", "historical", "revised", "no_longer_applicable"]
+            "enum": [
+              "current",
+              "historical",
+              "revised",
+              "no_longer_applicable"
+            ]
           },
-          "publication_state": {"enum": ["published", "withdrawn"]},
-          "last_reviewed": {"type": "string", "format": "date"}
+          "publication_state": {
+            "enum": [
+              "published",
+              "withdrawn"
+            ]
+          },
+          "last_reviewed": {
+            "type": "string",
+            "format": "date"
+          },
+          "case_version": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "first_published": {
+            "type": "string",
+            "format": "date"
+          },
+          "last_material_revision": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "review_due": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_last_checked": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "change_monitoring": {
+            "enum": [
+              "none",
+              "periodic",
+              "material_change"
+            ]
+          }
         }
       }
     }
