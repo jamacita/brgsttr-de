@@ -55,3 +55,33 @@ Historical value may remain relevant even where a measure is no longer current. 
 ## 9. Ordering
 
 Cases are not ranked. Chronological, alphabetical or thematic ordering may be used for navigation only.
+
+
+## 10. Voluntary self-standards
+
+A case may be classified as `voluntary_self_standard` where an organisation adopts a materially higher quality, transparency, service, governance or responsibility standard without an obvious external requirement to do so. This is particularly relevant in monopoly, oligopoly, infrastructure or otherwise weakly competitive settings, but is not limited to them.
+
+The classification describes the measure, not the organisation as a whole.
+
+## 11. Baseline and time-bounded significance
+
+Where reasonably possible, each case should identify the previous status quo against which the measure was notable.
+
+Significance at introduction must be distinguishable from later assessment. A measure can remain historically relevant even after becoming ordinary industry practice, being superseded or being discontinued.
+
+## 12. Source traceability
+
+Where full case metadata is maintained, each source should identify the factual claim it supports and the date on which the source was last checked. Source availability and material changes should be revisited according to the review cadence.
+
+## 13. Versioning and review
+
+Published cases use a monotonically increasing `case_version`.
+
+- `first_published` records the first public publication date.
+- `last_material_revision` records substantive editorial or factual revision.
+- `review_due` provides the next planned review date where applicable.
+- `source_last_checked` records the most recent source verification.
+- `change_monitoring` indicates whether no routine monitoring, periodic review or material-change review is appropriate.
+- `supersedes` and `superseded_by` preserve continuity where a case is replaced rather than simply edited.
+
+Minor typographic or formatting corrections do not require a new material version.
