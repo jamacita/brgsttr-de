@@ -7,18 +7,31 @@
   "measure_scale": "micro_measure",
   "reference_level": "customer_facing",
   "maturity": "pilot",
+  "baseline_or_previous_status_quo": "",
   "factual_description": "",
+  "significance_at_introduction": "",
+  "later_assessment": "",
   "observed_significance": "",
   "public_basis": [
     {
       "title": "",
       "url": "",
       "source_type": "primary",
-      "date": ""
+      "date": "",
+      "supports_claim": "",
+      "accessed_at": "YYYY-MM-DD",
+      "archive_url": null
     }
   ],
   "status": "current",
   "publication_state": "published",
+  "case_version": 1,
+  "first_published": "YYYY-MM-DD",
+  "last_material_revision": null,
+  "review_due": null,
+  "source_last_checked": "YYYY-MM-DD",
+  "change_monitoring": "periodic",
   "last_reviewed": "YYYY-MM-DD",
-  "supersedes": null
+  "supersedes": null,
+  "superseded_by": null
 }
