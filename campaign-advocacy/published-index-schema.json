@@ -8,7 +8,8 @@
     "schema",
     "last_updated",
     "ordering",
-    "cases"
+    "cases",
+    "thematic_order"
   ],
   "properties": {
     "schema": {
@@ -44,7 +45,8 @@
           "last_material_revision",
           "review_due",
           "source_last_checked",
-          "change_monitoring"
+          "change_monitoring",
+          "primary_theme"
         ],
         "properties": {
           "case_id": {
@@ -161,8 +163,33 @@
               "periodic",
               "material_change"
             ]
+          },
+          "primary_theme": {
+            "enum": [
+              "inclusive_design_accessibility",
+              "service_design_customer_autonomy",
+              "repairability_longevity_circular_use",
+              "brand_stewardship_public_communication",
+              "governance_leadership_voluntary_commitments",
+              "safety_privacy_open_standards"
+            ]
           }
         }
+      }
+    },
+    "thematic_order": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "inclusive_design_accessibility",
+          "service_design_customer_autonomy",
+          "repairability_longevity_circular_use",
+          "brand_stewardship_public_communication",
+          "governance_leadership_voluntary_commitments",
+          "safety_privacy_open_standards"
+        ]
       }
     }
   }
