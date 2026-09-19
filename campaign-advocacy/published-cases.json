@@ -396,6 +396,53 @@
       "review_due": "2027-09-19",
       "source_last_checked": "2026-09-19",
       "change_monitoring": "periodic"
+    },
+    {
+      "case_id": "bvg-weil-wir-dich-lieben",
+      "public_anchor": "case-bvg-weil-wir-dich-lieben",
+      "entity_or_brand": "BVG",
+      "period": "2015–present",
+      "initiative": "Weil wir dich lieben brand repositioning",
+      "dimension": [
+        "brand_stewardship",
+        "voluntary_self_standard"
+      ],
+      "measure_scale": "programme",
+      "reference_level": "customer_facing",
+      "maturity": "active",
+      "status": "current",
+      "publication_state": "published",
+      "last_reviewed": "2026-09-19",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "review_due": "2027-09-19",
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "periodic"
+    },
+    {
+      "case_id": "dhl-gogreen-2008",
+      "public_anchor": "case-dhl-gogreen-2008",
+      "entity_or_brand": "Deutsche Post DHL / DHL",
+      "period": "2008–2016 target cycle",
+      "initiative": "GOGREEN quantified carbon-efficiency target",
+      "dimension": [
+        "innovation",
+        "voluntary_self_standard",
+        "industry_or_ecosystem_standard"
+      ],
+      "measure_scale": "programme",
+      "reference_level": "sectoral",
+      "maturity": "historical",
+      "status": "historical",
+      "publication_state": "published",
+      "last_reviewed": "2026-09-19",
+      "case_version": 1,
+      "first_published": "2026-09-19",
+      "last_material_revision": null,
+      "review_due": "2029-09-19",
+      "source_last_checked": "2026-09-19",
+      "change_monitoring": "material_change"
     }
   ]
 }
