@@ -85,3 +85,10 @@ Published cases use a monotonically increasing `case_version`.
 - `supersedes` and `superseded_by` preserve continuity where a case is replaced rather than simply edited.
 
 Minor typographic or formatting corrections do not require a new material version.
+
+
+## 14. Inclusion and non-inclusion
+
+Publication is selective and non-exhaustive. The absence of an organisation, brand, initiative or person carries no negative implication.
+
+Every positive reference should be formulated as narrowly as reasonably possible and should identify what materially improved relative to the relevant previous status quo. Inclusion of one measure must not be generalised into a comprehensive judgement about the entity.
