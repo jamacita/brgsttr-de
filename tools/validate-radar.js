@@ -16,7 +16,6 @@ const path = require("path");
 const root = path.resolve(__dirname, "..");
 const candidateSources = [
   process.env.RADAR_SOURCE,
-  path.resolve(root, "..", "jamacita-method-private", "brgsttr", "radar", "radar.json"),
   path.resolve(root, "..", "brgsttr-radar-private", "radar.json")
 ].filter(Boolean);
 
