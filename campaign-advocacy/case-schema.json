@@ -17,16 +17,32 @@
     "observed_significance",
     "public_basis",
     "status",
-    "last_reviewed"
+    "last_reviewed",
+    "baseline_or_previous_status_quo",
+    "significance_at_introduction",
+    "case_version",
+    "first_published",
+    "review_due",
+    "source_last_checked",
+    "change_monitoring"
   ],
   "properties": {
     "case_id": {
       "type": "string",
       "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
     },
-    "entity_or_brand": {"type": "string", "minLength": 1},
-    "period": {"type": "string", "minLength": 1},
-    "initiative": {"type": "string", "minLength": 1},
+    "entity_or_brand": {
+      "type": "string",
+      "minLength": 1
+    },
+    "period": {
+      "type": "string",
+      "minLength": 1
+    },
+    "initiative": {
+      "type": "string",
+      "minLength": 1
+    },
     "dimension": {
       "type": "array",
       "minItems": 1,
@@ -38,41 +54,108 @@
           "leadership",
           "process_or_service_quality",
           "innovation",
+          "voluntary_self_standard",
           "industry_or_ecosystem_standard"
         ]
       }
     },
     "measure_scale": {
-      "enum": ["micro_measure", "feature", "pilot", "programme", "system", "structural_change"]
+      "enum": [
+        "micro_measure",
+        "feature",
+        "pilot",
+        "programme",
+        "system",
+        "structural_change"
+      ]
     },
     "reference_level": {
-      "enum": ["internal", "customer_facing", "sectoral", "ecosystem"]
+      "enum": [
+        "internal",
+        "customer_facing",
+        "sectoral",
+        "ecosystem"
+      ]
     },
     "maturity": {
-      "enum": ["pilot", "active", "scaled", "completed", "historical", "revised"]
+      "enum": [
+        "pilot",
+        "active",
+        "scaled",
+        "completed",
+        "historical",
+        "revised"
+      ]
     },
-    "factual_description": {"type": "string", "minLength": 1},
-    "observed_significance": {"type": "string", "minLength": 1},
+    "factual_description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "observed_significance": {
+      "type": "string",
+      "minLength": 1
+    },
     "public_basis": {
       "type": "array",
       "minItems": 1,
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["title", "url", "source_type"],
+        "required": [
+          "title",
+          "url",
+          "source_type",
+          "supports_claim",
+          "accessed_at"
+        ],
         "properties": {
-          "title": {"type": "string", "minLength": 1},
-          "url": {"type": "string", "format": "uri"},
-          "source_type": {"enum": ["primary", "reliable_secondary"]},
-          "date": {"type": "string"}
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "source_type": {
+            "enum": [
+              "primary",
+              "reliable_secondary"
+            ]
+          },
+          "date": {
+            "type": "string"
+          },
+          "supports_claim": {
+            "type": "string",
+            "minLength": 1
+          },
+          "accessed_at": {
+            "type": "string",
+            "format": "date"
+          },
+          "archive_url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
         }
       }
     },
     "status": {
-      "enum": ["current", "historical", "revised", "no_longer_applicable"]
+      "enum": [
+        "current",
+        "historical",
+        "revised",
+        "no_longer_applicable"
+      ]
     },
     "publication_state": {
-      "enum": ["published", "withdrawn"],
+      "enum": [
+        "published",
+        "withdrawn"
+      ],
       "default": "published"
     },
     "last_reviewed": {
@@ -80,7 +163,59 @@
       "format": "date"
     },
     "supersedes": {
-      "type": ["string", "null"]
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "baseline_or_previous_status_quo": {
+      "type": "string"
+    },
+    "significance_at_introduction": {
+      "type": "string",
+      "minLength": 1
+    },
+    "later_assessment": {
+      "type": "string"
+    },
+    "case_version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "first_published": {
+      "type": "string",
+      "format": "date"
+    },
+    "last_material_revision": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "review_due": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_last_checked": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "change_monitoring": {
+      "enum": [
+        "none",
+        "periodic",
+        "material_change"
+      ]
+    },
+    "superseded_by": {
+      "type": [
+        "string",
+        "null"
+      ]
     }
   }
 }
